@@ -55,7 +55,7 @@
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text-uppercase">Dog Treat Dispenser</h1>
           <h2 class="text-white-50 mx-auto mt-2 mb-5">An instant dog treat dispenser, activated by this website.</h2>
-          <a href="#about" class="btn btn-primary js-scroll-trigger">Dispense My Dog A Treat!</a>
+          <a href="#about" onclick="feedthedog()" class="btn btn-primary js-scroll-trigger">Dispense My Dog A Treat!</a>
         </div>
       </div>
     </header>
@@ -222,7 +222,22 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyA3UZWBj24xOrqsdWpxoJ4TKspopjSukCk",
+                authDomain: "mydogfeeder.firebaseapp.com",
+                databaseURL: "https://mydogfeeder.firebaseio.com",
+                projectId: "mydogfeeder",
+                storageBucket: "mydogfeeder.appspot.com",
+                messagingSenderId: "824628472203"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="script.js"></script>
 
   </body>
 
 </html>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
