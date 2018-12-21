@@ -2,7 +2,8 @@ var databaseRef = firebase.database().ref();
 var dogStatus;
 
 function feedthedog(){
-    databaseRef.child("status").set(1);
+    alert("Button disabled for display purposes.");
+    //databaseRef.child("status").set(1);
     
     
 }
